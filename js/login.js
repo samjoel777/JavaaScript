@@ -12,21 +12,24 @@ if (username == "" || password == "")
 {
     alert("Invalid Username and Password");
 }
-else if (age >=18 && gender1 == false){
+if (age >=18 && gender1 == false){
     confirm("Welcome to Female Login");
 }
-else if (age >=18 && gender1 == true){
+if (age >=18 && gender1 == true){
     confirm("Welcome to male Login");
 }
-else if(age == "" || username == false || password == false || age == false ){
+if(age == "" || username == false || password == false || age == false ){
     alert("Please Fill Details");
 }
-else if (age <=18 )
+else if (age <18 )
 {
     alert("Your not Eligible");
 }
 else{
-    alert("Invalid Details");
+    alert(`Please Check details:
+    username: ${username}
+    password: ${password}
+    age: ${age} `);
 }
 
 
