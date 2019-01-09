@@ -29,17 +29,14 @@ if(value1 == 1){
 if(value1 == 2){
     if(rand == Door_Close){
         console.log(`${Close}`);
+        console.log(`${Out}`)
     }
     else{
         console.log("Door Is Closed")
-        console.log(`${Out}`)
+        
     }
 }
-
 
 if(value1 == "" || value1 == undefined){
     alert("No Value Entered")
 }
-
-
-
