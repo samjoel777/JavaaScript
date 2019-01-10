@@ -1,42 +1,43 @@
-let value = ["Door Is Open","Door Is Close"]
+let door_Open = "The Door is Opened";
 
-let Door_Open = "Door Is Open";
+let door_Already_Open = "The Door is Already Open";
 
-let Door_Close = "Door Is Close"
+let door_Close = "The Door is Closed";
 
-let Open = "Door Is Already Open";
+let door_Already_Close = "The Door is Already Closed";
 
-let Close = "Door Is Already Closed";
+let outside = "Iam Outside";
 
-let Out = "Iam Outside";
+let inside = "Iam Inside";
 
-let  In = "Iam Inside";
+let default_Door_Value = prompt(` Choose The Default Door value
+1.Door is Open 
+2. Door is Close `);
 
-let rand = value[Math.floor(Math.random() * value.length)];
- 
-let value1 = prompt(`1.${Door_Open} 2.${Door_Close}`);
+let door_Value = prompt("1.Open The Door 2.Close The Door");
 
-if(value1 == 1){
-    if(rand == Door_Open){
-        console.log(`${Open}`);
+while(default_Door_Value == 1){
+    console.log("Default Door Value: Door is Open");
+    if(door_Value == 1){
+        console.log(door_Already_Open);
+        break;
     }
-    else{
-        console.log("Door Is Opened");
-        console.log(`${In}`)
-    }   
-}
-
-if(value1 == 2){
-    if(rand == Door_Close){
-        console.log(`${Close}`);
-        console.log(`${Out}`)
-    }
-    else{
-        console.log("Door Is Closed")
-        
+    if(door_Value == 2){
+        console.log(door_Close);
+        console.log(outside);
+        break;
     }
 }
 
-if(value1 == "" || value1 == undefined){
-    alert("No Value Entered")
+while(default_Door_Value == 2){
+    console.log("Default Door Value: Door is Close");
+    if(door_Value == 1){
+        console.log(door_Open);
+        console.log(inside);
+        break;
+    }
+    if(door_Value == 2){
+        console.log(door_Already_Close);
+        break;
+    }
 }
