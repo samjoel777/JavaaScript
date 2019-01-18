@@ -76,3 +76,5 @@ console.log(emp2);
 // };
 
 // console.log(user.cal_Salary());
+
+
