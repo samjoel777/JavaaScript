@@ -95,7 +95,7 @@ if(input_1 == 1)
                 {
                     if(input_1a == accounts[key].account_Id)
                     {
-                        console.log(accounts[key]);
+                        console.log(accounts[key].account_Balance);
                     }
 
                     // account_Id_2 = accounts[key].account_Id;
