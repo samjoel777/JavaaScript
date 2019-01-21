@@ -26,7 +26,8 @@ let value = prompt(`
 1.Show Balance
 2.Create Account
 3.Transactions
-4.Exit
+4.Fixed Deposit
+5.Exit
 `);
 
 function search_For_AccountNumber(account_No) 
@@ -262,4 +263,5 @@ if(value == 3)
         }
     }
 }
+
 
