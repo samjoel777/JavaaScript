@@ -264,4 +264,34 @@ if(value == 3)
     }
 }
 
+if(value == 4)
+{
+    let type_Of_Customer = prompt(`
+    1. Normal
+    2. Senior Citizen
+    `);
 
+    let type_Of_Fixed_Deposit = prompt(`
+    1.Cumulative
+    2.Quarterly Payout
+    3.Monthly Payout
+    4.Short Term FD
+    `); 
+
+    let amount_Of_Deposit = +prompt("Enter The Amount");
+
+    let date_Of_Fixed_Deposit = new Date();
+    
+    let tenure = prompt(`
+    1.Years/Months/Days
+    2.Days Only
+    `)
+
+    if(type_Of_Customer == 1)
+    {
+        if(type_Of_Fixed_Deposit = 1)
+        {
+            
+        }
+    }
+}

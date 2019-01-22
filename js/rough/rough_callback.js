@@ -49,49 +49,40 @@
 
 // Nested call-back Step-3
 
-let first = (value,callback) =>
+let first = (value,function_Name) =>
 {
-    return callback(value * 2,false);
+    return function_Name(value * 2);
 }
 
-let second = (value,callback) =>
+let second = (value,function_Name) =>
 {
-    return callback(value * 2,false);
+    return function_Name(value * 2);
 }
 
-let third = (value,callback) =>
+let third = (value,function_Name) =>
 {
-    return callback(value * 2,false);
+    return function_Name(value * 2);
 }
 
-let callback = (firstResult,error) =>
-{
-    return console.log("firstResult",firstResult);
-}
 
-first(10,function(firstResult,error)
-{
-    console.log("firstResult",firstResult);
-})
-
-first(10,
-    function(firstResult,error)
-{
-    console.log("firstResult",firstResult);
-    if(!error)
+first(200,
+    function_Name = (first_Result) =>
     {
-        second(firstResult,
-            function(secondResult,error)
+        console.log("first_Result",first_Result);
+        if(true)  
+        {
+            second(first_Result,
+            function_Name = (second_Result) =>
+        {
+            console.log("second_Result",second_Result);
+            if(true)
             {
-                console.log("secondResult",secondResult);
-                if(!error)
-                {
-                    third(secondResult,
-                        function(thirdResult,error)
-                    {
-                        console.log("thirdResult",thirdResult);
-                    });
-                }
+                third(second_Result,
+                function_Name = (third_Result) =>
+            {
+                console.log("third_Result",third_Result);
             });
-    }
-});
+            }
+        });
+        }
+    });
