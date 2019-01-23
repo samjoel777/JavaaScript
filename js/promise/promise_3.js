@@ -26,11 +26,13 @@ mother_Promise.then(function(response){ return response;})
         mother.food = "Biryani";
         return mother;
     }
-    else
-    {
-        mother.food = "Make Yourself Anything";
-        return mother;
-    }
 })
 .then(function(response){console.log(response);})
-.catch(function(response){console.log(response);});
+.catch(function(mother){ 
+    if(mother.cleaning != "Done")
+    {
+        mother.food = "Make Yourself Anything"
+        return mother;
+    }
+ })
+ .then(function(error){ console.log(error); })
