@@ -1,7 +1,7 @@
 let mother_Promise_1 = () =>
 {
     return new Promise (function (resolve,reject){
-        var is_Cleaning_Room = true;
+        var is_Cleaning_Room = false;
         if(is_Cleaning_Room)
         {
             activities = {
