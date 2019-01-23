@@ -13,7 +13,7 @@
 // father_Promise.then(function(response){console.log(response);}).catch(function(reject){console.log(reject);});
 
 let father_Promise = new Promise (function(resolve,reject){
-    let isPass = true;
+    let isPass = false;
     if(isPass)
     {
         var result ={
@@ -42,10 +42,13 @@ father_Promise.then(function(result){ return result;})
         }
         return result;
     }
-    else
+})
+.then(function(result){ console.log(result); })
+.catch(function(result){ 
+    if(!result.pass)
     {
-        result.bike = "No bike"
+        result.bike = "No Bike";
         return result;
     }
-})
-.then(function(result){console.log(result)}).catch(function(response){console.log(response);});
+}).then(function(result){console.log(result)});
+
