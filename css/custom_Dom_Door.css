@@ -14,3 +14,10 @@ p
 {
     text-align: center;
 }
+
+#gate
+{
+    width : 50%;
+    height: 20%;
+    margin-left: 25%;
+}
