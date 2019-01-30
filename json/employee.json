@@ -1,0 +1,20 @@
+[{
+    "e_Name":"SAM JOEL",
+    "e_Id":311177110136,
+    "e_Address":
+    {
+        "city":"Kakinada",
+        "pincode":533003 
+    },
+    "friends":["Umar","Shareef","Jani","Mahesh","Sudheer"]
+},
+{
+    "e_Name":"ABDUL JANI",
+    "e_Id":311177110139,
+    "e_Address":
+    {
+        "city":"ELURU",
+        "pincode":5334112 
+    },
+    "friends":["Sam","Shareef","Jani","Mahesh","Sudheer"]
+}]
